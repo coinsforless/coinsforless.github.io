@@ -2,69 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cheap Pokémon GO Coins</title>
+  <title>CoinsForLess</title>
   <style>
     body {
-      font-family: Arial;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #0d1117;
       color: white;
-      text-align: center;
     }
+
     header {
-      background: #161b22;
-      padding: 20px;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #1f2937, #111827);
     }
+
     h1 {
+      margin: 0;
+      font-size: 42px;
       color: #58a6ff;
     }
-    .box {
-      background: #161b22;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
+
+    .subtitle {
+      color: #c9d1d9;
+      margin-top: 10px;
     }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .coins {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #58a6ff;
+    }
+
+    .price {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
     button {
       background: #238636;
-      color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
       cursor: pointer;
+    }
+
+    button:hover {
+      background: #2ea043;
+    }
+
+    .section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Pokémon GO Coins Shop</h1>
-  <p>Fast • Cheap • Simple</p>
+  <h1>CoinsForLess</h1>
+  <p class="subtitle">Cheap PokéCoins • Fast Delivery • 24/7 Service</p>
 </header>
 
-<div class="box">
-  <h2>Welcome</h2>
-  <p>Get your Pokémon GO coins for lower prices.</p>
+<div class="container">
+
+  <div class="section">
+    <h2>Our Prices</h2>
+  </div>
+
+  <div class="pricing">
+    <div class="card">
+      <div class="coins">550 Coins</div>
+      <div class="price">€3.50</div>
+      <button onclick="alert('Contact us on Discord to order')">Buy</button>
+    </div>
+
+    <div class="card">
+      <div class="coins">1200 Coins</div>
+      <div class="price">€5.75</div>
+      <button onclick="alert('Contact us on Discord to order')">Buy</button>
+    </div>
+
+    <div class="card">
+      <div class="coins">2500 Coins</div>
+      <div class="price">€8.50</div>
+      <button onclick="alert('Contact us on Discord to order')">Buy</button>
+    </div>
+
+    <div class="card">
+      <div class="coins">5200 Coins</div>
+      <div class="price">€14.00</div>
+      <button onclick="alert('Contact us on Discord to order')">Buy</button>
+    </div>
+
+    <div class="card">
+      <div class="coins">14500 Coins</div>
+      <div class="price">€30.00</div>
+      <button onclick="alert('Contact us on Discord to order')">Buy</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>How It Works</h2>
+    <p>1. Contact us on Discord</p>
+    <p>2. Choose your package</p>
+    <p>3. Send payment</p>
+    <p>4. Receive your coins quickly</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Discord: yourname#1234</p>
+  </div>
+
 </div>
 
-<div class="box">
-  <h2>Prices</h2>
-  <p>100 coins - €X</p>
-  <p>550 coins - €X</p>
-  <p>1200 coins - €X</p>
-</div>
-
-<div class="box">
-  <h2>How it works</h2>
-  <p>1. Contact me</p>
-  <p>2. Send payment</p>
-  <p>3. Receive your coins</p>
-</div>
-
-<div class="box">
-  <h2>Contact</h2>
-  <p>Discord: yourname#1234</p>
-  <button>Order Now</button>
-</div>
+<footer>
+  <p>© 2026 CoinsForLess</p>
+</footer>
 
 </body>
 </html>
